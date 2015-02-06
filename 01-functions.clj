@@ -22,3 +22,8 @@
 
 (identity- 1)
 ; 1
+
+(=
+ (identity 1)
+ (identity- 1))
+; true
