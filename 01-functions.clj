@@ -86,3 +86,11 @@
 ; private functions
 (defn- private []
   "s3cr3t stuff")
+
+; recursive functions
+(defn revers [x]
+  (if (> x 0)
+    (conj (revers (dec x)) x)
+    '()))
+
+(revers 10)
