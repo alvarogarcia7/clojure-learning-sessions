@@ -31,3 +31,22 @@
 (meta #'identity-) ; works both in IDE and repl
 
 (source +) ; only works in repl
+
+(defn identity-multiple
+  "functions can have multiple sets of parameters (overload)"
+  ([x] x)
+  ([x y & z] (apply conj [x y] z)) ; x and y are mandatory, the rest are optional
+  ([x y] {x y}) ; the order does not matter
+  )
+
+(identity-multiple 1)
+;1
+
+(identity-multiple 1 2)
+; {1 2}
+
+(identity-multiple 1 2 3)
+; [1 2 3]
+
+(identity-multiple 1 2 3 4)
+; [1 2 3 4]
