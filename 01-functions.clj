@@ -94,3 +94,18 @@
     '()))
 
 (revers 10)
+
+; lambda - anonymous functions
+(map (fn [x] x) '(1 2 3))
+; (1 2 3)
+
+; this is not going to work
+; #(%) : see http://stackoverflow.com/questions/13204993/anonymous-function-shorthand
+; it's converted to (fn [x] (x))
+
+(map #(-> %) '(1 2 3)) ; % or %1 is the first parameter
+; (1 2 3)
+
+(map #(-> [%1]) '(1 2 3))
+; ([1] [2] [3])
+
