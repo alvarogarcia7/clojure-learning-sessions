@@ -65,3 +65,20 @@
 
 (named-parameters {:name "b"})
 ; "b"
+
+
+; copy for advanced parameters, including optional
+; https://clojuredocs.org/clojure.core/defn
+(defn somefn
+  [req1 req2 ;required params
+   & {:keys [a b c d e] ;optional params
+      :or {a 1 ;optional params with preset default values other than the nil default
+                  ; b takes nil if not specified on call
+            c 3 ; c is 3 when not specified on call
+            d 0 ; d is 0 --//--
+                  ; e takes nil if not specified on call
+           }
+      :as mapOfParamsSpecifiedOnCall ;takes nil if no extra params(other than the required ones) are specified on call
+      }]
+  (println req1 req2 mapOfParamsSpecifiedOnCall a b c d e)
+  )
