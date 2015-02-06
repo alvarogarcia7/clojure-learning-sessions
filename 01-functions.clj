@@ -12,3 +12,13 @@
 
 (no-params)
 ; 8
+
+; this is a function with one parameter
+; as "identity" is already a function, we name it otherwise
+(defn identity-
+  "as it returns the parameter, we call it identity"
+  [x]
+  x)
+
+(identity- 1)
+; 1
