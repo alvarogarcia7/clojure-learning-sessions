@@ -82,3 +82,7 @@
       }]
   (println req1 req2 mapOfParamsSpecifiedOnCall a b c d e)
   )
+
+; private functions
+(defn- private []
+  "s3cr3t stuff")
