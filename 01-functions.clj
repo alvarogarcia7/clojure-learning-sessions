@@ -27,3 +27,7 @@
  (identity 1)
  (identity- 1))
 ; true
+
+(meta #'identity-) ; works both in IDE and repl
+
+(source +) ; only works in repl
