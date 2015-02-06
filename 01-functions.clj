@@ -50,3 +50,18 @@
 
 (identity-multiple 1 2 3 4)
 ; [1 2 3 4]
+
+
+(defn named-parameters
+  "you can name parameters, like in python"
+  [{name- :name}]
+  name-)
+
+(named-parameters "a")
+;nil
+
+(named-parameters {:name ["a"]})
+; ["a"]
+
+(named-parameters {:name "b"})
+; "b"
