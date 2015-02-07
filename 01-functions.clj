@@ -18,9 +18,9 @@
   8
   1
   (inc 1))
-; 2
 
 (last-command)
+; 2
 
 ; this is a function with one parameter
 ; as "identity" is already a function, we name it otherwise
