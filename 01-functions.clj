@@ -1,4 +1,4 @@
-;; a bit about clojure functions
+; ## a bit about clojure functions
 ; main source: https://clojuredocs.org/clojure.core/defn
 
 ; see (source defn)
