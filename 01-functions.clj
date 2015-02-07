@@ -49,7 +49,7 @@
   )
 
 (identity-multiple 1)
-;1
+; 1
 
 (identity-multiple 1 2)
 ; {1 2}
@@ -67,7 +67,7 @@
   name-)
 
 (named-parameters "a")
-;nil
+; nil
 
 (named-parameters {:name ["a"]})
 ; ["a"]
@@ -103,7 +103,7 @@
     '()))
 
 (revers 10)
-;(10 9 8 7 6 5 4 3 2 1)
+; (10 9 8 7 6 5 4 3 2 1)
 
 ; lambda - anonymous functions
 (map (fn [x] x) '(1 2 3))
