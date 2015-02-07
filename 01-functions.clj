@@ -13,6 +13,15 @@
 (no-params)
 ; 8
 
+; the last command will be executed and returned
+(defn last-command []
+  8
+  1
+  (inc 1))
+; 2
+
+(last-command)
+
 ; this is a function with one parameter
 ; as "identity" is already a function, we name it otherwise
 (defn identity-
