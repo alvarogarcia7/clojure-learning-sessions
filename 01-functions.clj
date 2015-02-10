@@ -1,6 +1,8 @@
 ; ## a bit about clojure functions
 ; main source: https://clojuredocs.org/clojure.core/defn
 
+; link to a more complete session: https://gist.github.com/trikitrok/b14d12f78113ad8494fc
+
 ; see (source defn)
 
 ; defn is the same as (def name (fn [params* ] exprs*)) or
